@@ -38,8 +38,12 @@ export default (appInfo: EggAppInfo) => {
 
   // 跨域支持
   config.cors = {
-    origin: '*',
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
+    // origin: '*',
+    origin: ctx => {
+      // console.log(ctx.request.header.origin)
+      return ctx.request.header.origin as string
+    },
+    allowMethods: ['GET', 'HEAD', 'PUT', 'POST', 'DELETE', 'PATCH', 'OPTIONS'],
   }
   // 端口
   config.cluster = {
