@@ -44,6 +44,7 @@ export default (appInfo: EggAppInfo) => {
       return ctx.request.header.origin as string
     },
     allowMethods: ['GET', 'HEAD', 'PUT', 'POST', 'DELETE', 'PATCH', 'OPTIONS'],
+    credentials: true,
   }
   // 端口
   config.cluster = {
