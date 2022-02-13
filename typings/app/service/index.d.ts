@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.9
+// This file is created by egg-ts-helper@1.29.1
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -6,9 +6,9 @@ type AnyClass = new (...args: any[]) => any;
 type AnyFunc<T = any> = (...args: any[]) => T;
 type CanExportFunc = AnyFunc<Promise<any>> | AnyFunc<IterableIterator<any>>;
 type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? ReturnType<T> : T> = U extends AnyClass ? InstanceType<U> : U;
+import ExportBaseService from '../../../app/service/BaseService';
 import ExportAlbumInfo from '../../../app/service/albumInfo';
 import ExportBanner from '../../../app/service/banner';
-import ExportBaseService from '../../../app/service/BaseService';
 import ExportComment from '../../../app/service/comment';
 import ExportGetTagList from '../../../app/service/getTagList';
 import ExportLrc from '../../../app/service/lrc';
@@ -26,9 +26,9 @@ import ExportSinger from '../../../app/service/singer';
 
 declare module 'egg' {
   interface IService {
+    baseService: AutoInstanceType<typeof ExportBaseService>;
     albumInfo: AutoInstanceType<typeof ExportAlbumInfo>;
     banner: AutoInstanceType<typeof ExportBanner>;
-    baseService: AutoInstanceType<typeof ExportBaseService>;
     comment: AutoInstanceType<typeof ExportComment>;
     getTagList: AutoInstanceType<typeof ExportGetTagList>;
     lrc: AutoInstanceType<typeof ExportLrc>;
