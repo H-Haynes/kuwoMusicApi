@@ -14,4 +14,8 @@ export default class Mv extends BaseService {
       url: res,
     }
   }
+
+  async getKGMvInfo (mvid) {
+    return await this.ctx.curl(`http://m.kugou.com/app/i/mv.php?cmd=100&hash=${mvid}&ismp3=1&ext=mp4`)
+  }
 }

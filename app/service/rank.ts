@@ -23,4 +23,13 @@ export default class Rank extends BaseService {
       },
     })
   }
+
+  // 获取酷狗排行榜列表
+  async getKgRankList () {
+    return this.ctx.curl('http://m.kugou.com/rank/list&json=true')
+  }
+
+  async getKgRankInfo (rankid) {
+    return this.ctx.curl(`http://m.kugou.com/rank/info/?rankid=${rankid}&page=1&json=true`)
+  }
 }

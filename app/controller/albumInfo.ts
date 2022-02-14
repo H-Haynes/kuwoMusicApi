@@ -17,4 +17,19 @@ export default class AlbumInfo extends BaseController {
     const res = await service.albumInfo.getList({ albumId, pn, rn })
     ctx.body = res
   }
+
+  async getKGAlbumList () {
+    const res = await this.ctx.service.albumInfo.getKGAlbumList(this.ctx.request.query.page)
+    this.ctx.body = res.data.toString()
+  }
+
+  async getKGAlbumListByTag () {
+    const res = await this.ctx.service.albumInfo.getKGAlbumListByTag(this.ctx.request.query.tagid, this.ctx.request.query.page)
+    this.ctx.body = res.data.toString()
+  }
+
+  async getKGAlbumInfo () {
+    const res = await this.ctx.service.albumInfo.getKGAlbumInfo(this.ctx.request.query.albumId)
+    this.ctx.body = res.data.toString()
+  }
 }

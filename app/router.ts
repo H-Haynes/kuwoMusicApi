@@ -58,4 +58,22 @@ export default (app: Application) => {
   router.get('/kuwo/search/searchPlayListBykeyWord', controller.search.searchPlayListBykeyWord)
   // 歌手搜索
   router.get('/kuwo/search/searchArtistBykeyWord', controller.search.searchArtistBykeyWord)
+  // 酷狗排行榜列表
+  router.get('/kugou/rank/list', controller.rank.kgRankList)
+  // 酷狗推荐歌单
+  router.get('/kugou/getAlbumList', controller.albumInfo.getKGAlbumList)
+  // 酷狗歌单分类
+  router.get('/kugou/getTagList', controller.getTagList.getKGTagList)
+  // 获取酷狗分类歌单
+  router.get('/kugou/albumList', controller.albumInfo.getKGAlbumListByTag)
+  // 获取酷狗歌单详情
+  router.get('/kugou/albumInfo', controller.albumInfo.getKGAlbumInfo)
+  // 获取酷狗音乐信息(含播放地址)
+  router.get('/kugou/playInfo', controller.playUrl.getKGPlayInfo)
+  // 获取酷狗搜索结果
+  router.get('/kugou/search', controller.search.searchKGMusic)
+  // 酷狗排行榜详情
+  router.get('/kugou/rank/info', controller.rank.kgRankDetail)
+  // 酷狗MV信息(无播放地址)
+  router.get('/kugou/mvInfo', controller.mv.getKGMvInfo)
 }

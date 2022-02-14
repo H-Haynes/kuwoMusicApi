@@ -18,4 +18,9 @@ export default class Mv extends BaseController {
     const res = await service.mv.getMvUrl(rid)
     ctx.body = res
   }
+
+  async getKGMvInfo () {
+    const result = await this.ctx.service.mv.getKGMvInfo(this.ctx.request.query.id)
+    this.ctx.body = result.data.toString()
+  }
 }

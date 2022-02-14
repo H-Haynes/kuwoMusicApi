@@ -30,4 +30,9 @@ export default class Search extends BaseService {
   async searchArtistBykeyWord ({ key, pn, rn }) {
     return this.commonRequest(`http://www.kuwo.cn/api/www/search/searchArtistBykeyWord?key=${key}&pn=${pn}&rn=${rn}&httpsStatus=1`)
   }
+
+  // 酷狗音乐搜索
+  async searchKGMusic (keywords, page = 1) {
+    return this.ctx.curl(`http://mobilecdn.kugou.com/api/v3/search/song?format=json&keyword=${keywords}&page=${page}&pagesize=20&showtype=1`)
+  }
 }

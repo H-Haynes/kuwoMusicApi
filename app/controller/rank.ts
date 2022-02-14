@@ -22,4 +22,14 @@ export default class Rank extends BaseController {
     const res = await service.rank.getRecBangList()
     ctx.body = res
   }
+
+  async kgRankList () {
+    const res = await this.ctx.service.rank.getKgRankList()
+    this.ctx.body = res.data.toString()
+  }
+
+  async kgRankDetail () {
+    const res = await this.ctx.service.rank.getKgRankInfo(this.ctx.request.query.rankid)
+    this.ctx.body = res.data.toString()
+  }
 }

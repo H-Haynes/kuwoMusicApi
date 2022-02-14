@@ -19,4 +19,9 @@ export default class PlayUrl extends BaseController {
 
     ctx.body = res
   }
+
+  async getKGPlayInfo () {
+    const res = await this.ctx.service.playUrl.getKGPlayInfo(this.ctx.request.query.id)
+    this.ctx.body = res.data.toString()
+  }
 }

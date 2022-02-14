@@ -93,4 +93,10 @@ export default class Search extends BaseController {
     const res = await service.search.searchArtistBykeyWord({ key, pn, rn })
     ctx.body = res
   }
+
+  // 酷狗音乐搜索
+  async searchKGMusic () {
+    const result = await this.ctx.service.search.searchKGMusic(this.ctx.request.query.keywords, this.ctx.request.query.page)
+    this.ctx.body = result.data.toString()
+  }
 }
