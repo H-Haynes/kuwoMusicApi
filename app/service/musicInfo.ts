@@ -6,6 +6,6 @@ export default class MusicInfo extends BaseService {
   }
 
   async getMusicUrl (mid) {
-    return this.ctx.curl(`http://antiserver.kuwo.cn/anti.s?type=convert_url&rid=${mid}&format=aac|mp3`)
+    return this.ctx.curl(`http://antiserver.kuwo.cn/anti.s?type=convert_url&rid=${mid}&format=mp3`)
   }
 }
