@@ -13,6 +13,8 @@ export default (app: Application) => {
   // 歌单音乐
   router.get('/kuwo/musicList', controller.musicList.index)
   // 音乐播放地址
+  router.get('/kuwo/musicUrl', controller.musicInfo.getMusicUrl)
+  // 音乐播放地址
   router.get('/kuwo/url', controller.playUrl.index)
   // 获取 mv 播放地址
   router.get('/kuwo/mv_url', controller.mv.getMvUrl)

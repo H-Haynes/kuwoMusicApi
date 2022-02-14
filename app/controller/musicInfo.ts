@@ -19,4 +19,13 @@ export default class MusicInfo extends BaseController {
 
     ctx.body = res
   }
+
+  async getMusicUrl () {
+    const result = await this.ctx.service.musicInfo.getMusicUrl(this.ctx.query.mid)
+    this.ctx.body = {
+      code: 200,
+      message: 'success',
+      data: result.data.toString(),
+    }
+  }
 }

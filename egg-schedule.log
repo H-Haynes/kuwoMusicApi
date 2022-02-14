@@ -1,0 +1,18 @@
+2022-02-14 10:52:04,101 INFO 11184 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 10:52:04,101 INFO 11184 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 10:52:04,101 INFO 11184 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-14 10:52:04,724 INFO 11170 [Timer] /Users/fan/project/kuwoMusicApi/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 63475278ms at 2022-02-15 04:30:00.002
+2022-02-14 10:52:04,724 INFO 11170 [Timer] /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 47275276ms at 2022-02-15 00:00:00.000
+2022-02-14 10:52:04,724 INFO 11170 [Timer] /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 47276276ms at 2022-02-15 00:00:01.000
+2022-02-14 10:55:10,361 INFO 11348 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 10:55:10,361 INFO 11348 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 10:55:10,361 INFO 11348 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-14 10:55:29,889 INFO 11380 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 10:55:29,889 INFO 11380 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 10:55:29,889 INFO 11380 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-14 10:55:43,180 INFO 11452 [Timer] /Users/fan/project/kuwoMusicApi/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 63256821ms at 2022-02-15 04:30:00.001
+2022-02-14 10:55:43,180 INFO 11452 [Timer] /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 47056820ms at 2022-02-15 00:00:00.000
+2022-02-14 10:55:43,181 INFO 11452 [Timer] /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 47057819ms at 2022-02-15 00:00:01.000
+2022-02-14 10:55:43,132 INFO 11454 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 10:55:43,132 INFO 11454 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 10:55:43,132 INFO 11454 [egg-schedule]: register schedule /Users/fan/project/kuwoMusicApi/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
