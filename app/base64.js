@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* tslint-disable */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/semi */
 /* eslint-disable no-bitwise */
