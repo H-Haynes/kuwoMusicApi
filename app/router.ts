@@ -76,4 +76,6 @@ export default (app: Application) => {
   router.get('/kugou/rank/info', controller.rank.kgRankDetail)
   // 酷狗MV信息(无播放地址)
   router.get('/kugou/mvInfo', controller.mv.getKGMvInfo)
+  // 酷狗歌词
+  router.get('/kugou/lyric', controller.lrc.getKgLyric)
 }
